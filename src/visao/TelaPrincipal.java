@@ -1,11 +1,10 @@
 package visao;
 
-import acoes.AcaoBotaoEncerrar;
-
 import javax.swing.*;
+import javax.swing.table.TableModel;
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class TelaPrincipal extends JFrame {
 
@@ -19,6 +18,7 @@ public class TelaPrincipal extends JFrame {
     private JButton btTarifas = new JButton("Tarifas");
     private JButton btCategorias = new JButton("Categorias");
     private JButton btEncerrar = new JButton("Encerrar");
+    private final JTextField tfValor = new JTextField(10);
 
 
     public TelaPrincipal() {
@@ -42,11 +42,50 @@ public class TelaPrincipal extends JFrame {
 
         getContentPane().add(painelDireita, BorderLayout.EAST);
 
+       /* tbDados.setModel(new javax.swing.table.DefaultTableModel(
+        new Object [] [] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+        },      new String[] {"Código", "Nome", "Valores"}
+        ));*/
+
+        getContentPane().add(tfValor, BorderLayout.CENTER);
+
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        btEncerrar.addActionListener(new AcaoBotaoEncerrar());
+        btEncerrar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                System.exit(0);
+            }
+        });
 
+        btPracas.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                TelaPracas tPracas = TelaPracas.getInstancia();
+                tPracas.setVisible(true);
+            }
+
+        });
+
+        btTarifas.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+
+                try {
+                    Integer numero = Integer.valueOf(tfValor.getText());
+                    Integer dobro = numero * 2;
+                    JOptionPane.showMessageDialog(null, "O dobro do valor é " + dobro);
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Aoenas números são permitidos nesse campo!");
+                    tfValor.requestFocus();
+                    tfValor.selectAll();
+                }
+            }
+
+        });
     }
-
-
 }

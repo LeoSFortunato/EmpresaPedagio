@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c05f850a-45db-435a-b0cd-fa4d5d1c4acf" name="Changes" comment="commit inicial">
-      <change afterPath="$PROJECT_DIR$/src/acoes/AcaoBotaoEncerrar.java" afterDir="false" />
+    <list default="true" id="c05f850a-45db-435a-b0cd-fa4d5d1c4acf" name="Changes" comment="commit TelaPrincipal e AcaoBotaoEncerrar">
+      <change afterPath="$PROJECT_DIR$/src/visao/TelaPracas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/acoes/AcaoBotaoEncerrar.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/visao/TelaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visao/TelaPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +59,9 @@
       <updated>1700145469080</updated>
       <workItem from="1700145470101" duration="8003000" />
       <workItem from="1700212501640" duration="11627000" />
-      <workItem from="1700231505197" duration="5729000" />
+      <workItem from="1700231505197" duration="6066000" />
+      <workItem from="1700243923335" duration="288000" />
+      <workItem from="1700471714309" duration="8958000" />
     </task>
     <task id="LOCAL-00001" summary="commit inicial">
       <option name="closed" value="true" />
@@ -68,7 +71,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700231590140</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit TelaPrincipal e AcaoBotaoEncerrar">
+      <option name="closed" value="true" />
+      <created>1700243734575</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700243734575</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,6 +87,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit inicial" />
+    <MESSAGE value="commit TelaPrincipal e AcaoBotaoEncerrar" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit TelaPrincipal e AcaoBotaoEncerrar" />
   </component>
 </project>
